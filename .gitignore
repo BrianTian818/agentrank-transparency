@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# 采集过程产物：含浏览器 profile、登录态、临时目录，一律不入库
+_rt5_profile*/
+_rt5_runs/
+_rt5_runs_*/
+*.log
+
+# 凭据：任何情况下都不入库
+_tok.txt
+creds.json
+*.key
+.env

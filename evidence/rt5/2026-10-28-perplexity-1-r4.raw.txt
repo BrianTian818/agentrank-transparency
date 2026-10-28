@@ -1,0 +1,39 @@
+可以先去掉空格、短横线、括号等分隔符，再移除可选的国家码，最后检查是否为 11 位数字。不符合格式时抛出 ValueError，避免静默返回错误结果。
+
+python
+import re
+
+
+def normalize_phone(s: str) -> str:
+    """将手机号归一化为 11 位 ASCII 数字字符串。"""
+    if not isinstance(s, str):
+        raise TypeError("手机号必须是字符串")
+
+    # 去掉常见分隔符；保留其他字符，以便后续发现非法输入。
+    phone = re.sub(r"[\s().（）-]+", "", s)
+
+    if phone.startswith("+86"):
+        phone = phone[3:]
+    elif phone.startswith("0086"):
+        phone = phone[4:]
+    elif len(phone) == 13 and phone.startswith("86"):
+        phone = phone[2:]
+
+    if not re.fullmatch(r"[0-9]{11}", phone):
+        raise ValueError(f"无法归一化为 11 位手机号：{s!r}")
+
+    return phone
+使用示例
+python
+assert normalize_phone("138 0013 8000") == "13800138000"
+assert normalize_phone("138-0013-8000") == "13800138000"
+assert normalize_phone("+86 138 0013 8000") == "13800138000"
+assert normalize_phone("(+86) 138-0013-8000") == "13800138000"
+assert normalize_phone("0086 13800138000") == "13800138000"
+assert normalize_phone("8613800138000") == "13800138000"
+
+# 非法输入不会被悄悄“修复”
+# normalize_phone("abc13800138000")  # 抛出 ValueError
+# normalize_phone("1380013800")     # 抛出 ValueError
+
+这里仅检查归一化结果的数字格式和长度，不验证号段或号码是否真实存在。没有直接删除所有非数字字符，是为了避免把 "abc13800138000" 之类的错误输入也当作有效结果。

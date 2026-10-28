@@ -1,0 +1,60 @@
+调研：2026 年主流 AI 编程 Agent 的订阅价格。给我至少 5 个产品的名称、月费（美元）和官网 URL，用列表输出，每个都要带完整 URL（以 https:// 开头）。全网文库学术图片视频播客思考了6.51s17以下是 2026 年主流 AI 编程 Agent 的订阅价格调研结果：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+产品月费（USD）官网CursorPro 20/Pro+20 / Pro+ 20/Pro+60 / Ultra $200https://cursor.comClaude CodePro 20/Max20 / Max 20/Max100–$200https://www.anthropic.com/claudeChatGPT（含 Codex）‍Plus 20/Pro20 / Pro 20/Pro200https://chatgpt.com  / https://openai.comGitHub Copilot$10/月（基础版）https://github.com/features/copilotWindsurf$15/月https://windsurf.comKimi CodePlus 19/Pro19 / Pro 19/Pro39 / Max 99/Ultra99 / Ultra 99/Ultra199https://www.moonshot.cnDevin按任务/小时计费（非传统订阅制）https://cognition.ai
+补充说明：
+
+Cursor 在 2026 年体系：Hobby 免费、Pro 20、Pro+20、Pro+ 20、Pro+60、Ultra 200、Teams200、Teams 200、Teams40/人。
+Claude Code 随 Claude 订阅提供，Pro 档 20/月有使用量限制，Max档20/月有使用量限制，Max 档 20/月有使用量限制，Max档100–$200/月更高额度。
+ChatGPT：Plus 20/月可启用代码能力；Pro高档次20/月可启用代码能力；Pro 高档次 20/月可启用代码能力；Pro高档次200/月；另外 OpenAI 官方 AI 订阅套餐价格区间为 8–8–8–100/月。
+GitHub Copilot 基础版约 $10/月。AI编程工具对比与选择策略02:29
+Windsurf 约 $15/月。
+Kimi Code（Moonshot）为 2026 年推出的编程订阅：Plus 19、Pro19、Pro 19、Pro39、Max 99、Ultra99、Ultra 99、Ultra199。
+Devin（Cognition AI）采用 ACU（Agent Compute Unit）按用量计费，每单位 2.00–2.00–2.00–2.25，非固定月费订阅制。
+
+
+注：以上价格为公开报道中的 2026 年参考价，实际价格可能随官网实时调整，建议以各产品官网当前报价为准。部分产品（如 Cursor、Windsurf、Copilot）的免费/Hobby 档位可免费体验。
+展开讲讲生成幻灯片展示海报

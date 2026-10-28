@@ -1,0 +1,65 @@
+调研：2026 年主流 AI 编程 Agent 的订阅价格。给我至少 5 个产品的名称、月费（美元）和官网 URL，用列表输出，每个都要带完整 URL（以 https:// 开头）。
+全网
+文库
+学术
+图片
+视频
+播客
+思考了6.22s
+19
+
+根据2026年主流 AI 编程 Agent 的订阅价格调研，以下是涉及编程能力的主要产品及其价格：
+
+产品名称	主要订阅档位（月费，美元）	官网 URL
+Cursor	Hobby 免费；Pro 
+20
+；
+𝑃
+𝑟
+𝑜
++
+20；Pro+60；Ultra $200	https://cursor.com
+GitHub Copilot	免费版 
+0
+；专业版
+0；专业版10；专业+版 $39	https://github.com/features/copilot
+Claude Code（Anthropic）	Pro 
+20
+；
+𝑀
+𝑎
+𝑥
+20；Max100/$200	https://www.anthropic.com/claude/code
+OpenAI Codex	随 ChatGPT 套餐：Go 
+8
+、
+𝑃
+𝑙
+𝑢
+𝑠
+8、Plus20、Pro $100	https://openai.com/codex
+Google Gemini AI 编程（Gemini for Code）‍	AI Plus 
+4.99
+；
+𝐴
+𝐼
+𝑃
+𝑟
+𝑜
+4.99；AIPro19.99；AI Ultra $99.99	https://gemini.google.com
+Manus	约 $39/月	https://manus.im
+
+补充说明：
+
+Cursor 是当前最主流的 AI 原生 IDE，Pro 档位 $20/月是其主力付费档。
+GitHub Copilot 开源/学生可免费使用，付费专业版仅 $10/月，性价比较高。
+Claude Code 是终端型 AI 编程 Agent，需依赖 Claude 订阅，Pro $20/月有使用量限制。
+OpenAI Codex 无独立订阅，需从 ChatGPT 套餐购买，Plus $20 起。
+Google 系（Gemini）覆盖 Google Cloud 编程场景，价格从 $4.99 起相对亲民。
+Manus 是自主智能体产品，可完成开放式编程任务。
+
+以上价格均来自2026年相关行业报告及官方订阅渠道整理，实际价格可能随季度调整，建议以各官网实时报价为准。
+
+展开讲讲
+生成幻灯片
+展示海报

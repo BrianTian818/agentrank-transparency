@@ -1,0 +1,3 @@
+# 逐字原文必须字节级守恒：CRLF 转换会让复算结果与公布分数对不上
+* text=auto eol=lf
+*.png binary
