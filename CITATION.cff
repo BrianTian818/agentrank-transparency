@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "AgentRank 公开数据与判分脚本"
+message: >-
+  如果你引用了本仓库的数据，请同时给出数据快照号与链接 —— 排行榜按月复核会变。
+abstract: >-
+  AgentRank（agentrank.xyz）是独立的 AI Agent 透明度评测项目，发布 VI-100 可核验指数与
+  RT-5 真实能力实测。本仓库收录 RT-5 每一次运行的逐字原文、送进判分器的文本、页面截图，
+  以及判分器与采集器源码，供任何人自行复算每一个分数。
+type: dataset
+authors:
+  - name: "51kaifa.app 独立评测小组"
+    email: brian@51kaifa.app
+    affiliation: "51kaifa.app"
+identifiers:
+  - type: url
+    value: "https://agentrank.xyz"
+    description: "项目主页"
+repository-code: "https://github.com/BrianTian818/agentrank-transparency"
+url: "https://agentrank.xyz"
+keywords:
+  - ai-agent
+  - transparency
+  - verifiability
+  - benchmark
+  - reproducibility
+  - open-data
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
