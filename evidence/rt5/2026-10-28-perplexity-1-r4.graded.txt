@@ -1,0 +1,24 @@
+```
+import re
+
+
+def normalize_phone(s: str) -> str:
+    """将手机号归一化为 11 位 ASCII 数字字符串。"""
+    if not isinstance(s, str):
+        raise TypeError("手机号必须是字符串")
+
+    # 去掉常见分隔符；保留其他字符，以便后续发现非法输入。
+    phone = re.sub(r"[\s().（）-]+", "", s)
+
+    if phone.startswith("+86"):
+        phone = phone[3:]
+    elif phone.startswith("0086"):
+        phone = phone[4:]
+    elif len(phone) == 13 and phone.startswith("86"):
+        phone = phone[2:]
+
+    if not re.fullmatch(r"[0-9]{11}", phone):
+        raise ValueError(f"无法归一化为 11 位手机号：{s!r}")
+
+    return phone
+```

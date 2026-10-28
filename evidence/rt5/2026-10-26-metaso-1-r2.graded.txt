@@ -1,0 +1,16 @@
+```
+import re
+
+def normalize_phone(s):
+    # 移除所有非数字字符（空格、横杠、加号、86 国家码等都会一并被去掉）
+    digits = re.sub(r'\D', '', s)
+
+    # 去掉开头的国家码 86（如果存在），例如 "+86" 去掉后是 "138..."
+    if digits.startswith('86') and len(digits) == 13:
+        digits = digits[2:]
+
+    if len(digits) == 11 and digits.startswith('1'):
+        return digits
+    else:
+        raise ValueError(f"不是有效的中国手机号: {s!r}")
+```

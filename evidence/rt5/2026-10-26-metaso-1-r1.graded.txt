@@ -1,0 +1,14 @@
+```
+import re
+
+def normalize_phone(s):
+    """将任意格式的中国手机号归一化成 11 位纯数字字符串"""
+    # 1. 提取字符串中所有数字
+    digits = re.sub(r'\D', '', s)
+
+    # 2. 处理国际区号：若提取出的数字以 86 开头（如 "+86 138..."），去掉 "86"
+    if digits.startswith('86') and len(digits) == 13:
+        digits = digits[2:]
+
+    return digits
+```

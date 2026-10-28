@@ -1,0 +1,29 @@
+```
+以下按截至 2026 年 10 月 28 日检索到的官网价格整理，统一列出美元月付订阅价，不把年付折算价混作月付价；每项均附完整官网定价 URL。
+- GitHub Copilot
+  - 月费：Pro 为 10 美元/月；Pro+ 为 39 美元/月；Max 为 100 美元/月。
+  - 说明：支持 IDE Agent 模式、CLI 和云端编程任务；Agent 等功能消耗套餐内的 AI Credits，额外用量可另行购买。
+  - 官网 URL：https://github.com/features/copilot/plans
+- Claude Code（通过 Claude 订阅）
+  - 月费：Claude Pro 为 20 美元/月；Max 从 100 美元/月起。
+  - 说明：Pro 和 Max 均包含 Claude Code；Claude Code 与 Claude 聊天共享套餐使用额度，并非独立的无限量编程订阅。
+  - 官网 URL：https://claude.com/pricing
+- OpenAI Codex（通过 ChatGPT 订阅）
+  - 月费：ChatGPT Go 为 8 美元/月；Plus 为 20 美元/月；Pro 提供 100、200、500 美元/月档位。
+  - 说明：Go 的 Codex 访问限于逐步开放的桌面端轻量任务；Plus 包含网页版、CLI、IDE 扩展及云端集成功能。API Key 用量与订阅额度分开计费。
+  - 官网 URL：https://developers.openai.com/codex/pricing/
+- Cursor
+  - 月费：Plus 为 8 美元/月；Premium 为 30 美元/月；Super 为 100 美元/月；Ultra 为 200 美元/月。
+  - 说明：本次检索的官网页面已显示上述套餐，而非早期资料中的 Pro 20 美元/月。Plus 仅支持 Grok 模型；Premium 及以上支持云端 Agent，第三方模型另按用量收费。
+  - 官网 URL：https://cursor.com/pricing
+- Windsurf / Devin（Windsurf 定价入口目前展示 Devin 套餐）
+  - 月费：Pro 为 20 美元/月；Max 为 200 美元/月。
+  - 说明：官网当前页面以 Devin 品牌展示，Pro 包含云端 Agent（Devin Cloud）访问权限；超出套餐额度后可按 API 价格购买额外用量。这里合并列为一个产品条目，避免重复计数。
+  - 官网 URL：https://windsurf.com/pricing
+- Replit Agent（通过 Replit 订阅）
+  - 月费：Core 为 20 美元/月；Pro 为 100 美元/月。
+  - 说明：官网同时展示年付优惠价，分别为折合 18 和 90 美元/月；上述月费采用未打年付折扣的价格。Core 包含 20 美元模型额度，Pro 包含 100 美元额度及 10 个并行 Agent。
+  - 官网 URL：https://replit.com/pricing
+## 比价时的关键口径
+订阅费不等于无限使用费：这些产品分别采用共享额度、积分或额外用量计费。尤其是 Cursor 的第三方模型调用、Copilot 的额外 AI Credits，以及 Claude Code、Codex 超出套餐后的使用，可能增加实际账单；比较预算时应把“基础月费”和“额外用量”分开。
+```

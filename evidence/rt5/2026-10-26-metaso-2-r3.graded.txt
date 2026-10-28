@@ -1,0 +1,27 @@
+```
+全网
+文库
+学术
+图片视频播客
+思考了2.98s
+11
+根据 2026 年的调研资料，以下列出主流 AI 编程 Agent 的订阅价格信息：
+产品 月费（美元） 官网 URL
+Cursor（Pro 档） $20/月 https://www.cursor.com
+GitHub Copilot（Pro 档） $10/月 https://github.com/features/copilot
+Claude Code（随 Claude Pro） $20/月 https://www.anthropic.com/claude
+Windsurf $15/月 https://windsurf.com
+Manus 约 $39/月 https://manus.im
+Devin（Cognition AI） 按任务/小时计费，价格较高 https://www.cognition.ai/devin
+OpenAI Codex 按用量计费 https://openai.com/codex/
+几点说明：
+- Cursor：Pro 档 20/月，另设Pro+20/月，另设 Pro+ 20/月，另设Pro+60/月、Ultra $200/月等更高档。
+- GitHub Copilot：Pro 档 10/月，Pro+档10/月，Pro+ 档 10/月，Pro+档39/月。
+- Claude Code：随 Claude 订阅使用，Pro 档 20/月，更高的Max档为20/月，更高的 Max 档为 20/月，更高的Max档为100/$200/月。
+- Windsurf：基础订阅 $15/月。
+- Manus：订阅约 $39/月。
+- Devin 采用按任务/时长计费的非订阅模式，主要面向企业客户，定价较高。
+- OpenAI Codex 独立编程应用按用量计费，无固定席位费。
+注：以上价格信息截至各来源发布时点（多为 2025—2026 年数据），实际费率可能随厂家调整而变化，具体以官网为准。
+展开讲讲生成幻灯片展示海报
+```

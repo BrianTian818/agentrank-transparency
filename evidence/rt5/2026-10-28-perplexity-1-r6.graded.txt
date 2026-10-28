@@ -1,0 +1,24 @@
+```
+import re
+import unicodedata
+
+
+def normalize_phone(s: str) -> str:
+    """归一化为以 1 开头的 11 位数字；非法输入抛出异常。"""
+    if not isinstance(s, str):
+        raise TypeError("手机号必须是字符串")
+
+    # 将全角数字、全角加号等转换为半角字符。
+    phone = unicodedata.normalize("NFKC", s)
+
+    # 去掉常见分隔符；不直接删除所有非数字字符，
+    # 避免把带字母或其他无效内容的输入误当作手机号。
+    phone = re.sub(r"[\s().\-‐‑–—]+", "", phone)
+
+    # 仅当区号后恰好剩下 11 位数字时才移除区号。
+    match = re.fullmatch(r"(?:\+86|0086|86)?(1[0-9]{10})", phone)
+    if match is None:
+        raise ValueError(f"无效的手机号格式: {s!r}")
+
+    return match.group(1)
+```

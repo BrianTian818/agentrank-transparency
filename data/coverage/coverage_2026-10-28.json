@@ -1,267 +1,281 @@
 {
-  "generatedAt": "2026-10-28T07:13:20.502Z",
-  "probe": "写一个 Python 函数，输入整数列表，返回其中第二大的数。只给代码不要解释。",
-  "items": [
-    {
-      "name": "perplexity",
-      "label": "Perplexity",
-      "url": "https://www.perplexity.ai/",
-      "at": "2026-10-28T06:47:17.327Z",
-      "input": "div[contenteditable=\"true\"]#0",
-      "ansLen": 241,
-      "how": ".prose(inner)",
-      "result": "answer",
-      "evidence": "答案区出现函数定义（.prose(inner)，净长度 241 字）",
-      "snippet": "def second_largest(nums: list[int]) -> int: largest = second = None for num in nums: if largest is None or num > largest: second, largest = largest, num el"
-    },
-    {
-      "name": "metaso",
-      "label": "秘塔 AI 搜索",
-      "url": "https://metaso.cn/",
-      "at": "2026-10-28T06:47:57.380Z",
-      "input": "textarea#0",
-      "ansLen": 155,
-      "how": "body(clean)",
-      "result": "wall",
-      "evidence": "投递后出现登录入口：登录后"
-    },
-    {
-      "name": "qwen",
-      "label": "通义千问",
-      "url": "https://chat.qwen.ai/",
-      "at": "2026-10-28T06:49:17.124Z",
-      "input": "textarea#0",
-      "ansLen": 2,
-      "how": "main(clean)",
-      "result": "no_answer",
-      "evidence": "投递后未产出可判分正文（答案区净长度 2 字，未出现函数定义；页面尾部：有什么可以帮你的吗？写一个 Python 函数，输入整数列表，返回其中第二大的数。只给代码不要解释。自动）"
-    },
-    {
-      "name": "kimi",
-      "label": "Kimi",
-      "url": "https://www.kimi.com/",
-      "at": "2026-10-28T06:49:53.130Z",
-      "input": "div[contenteditable=\"true\"]#0",
-      "ansLen": 199,
-      "how": "body(clean)",
-      "result": "wall",
-      "evidence": "投递后出现登录入口：手机号 / 验证码"
-    },
-    {
-      "name": "chatglm",
-      "label": "智谱清言",
-      "url": "https://chatglm.cn/",
-      "at": "2026-10-28T06:50:26.564Z",
-      "input": "textarea#0",
-      "ansLen": 1723,
-      "how": "[class*=\"answer\" i](clean)",
-      "result": "answer",
-      "evidence": "答案区出现函数定义（[class*=\"answer\" i](clean)，净长度 1723 字）",
-      "snippet": "def second_largest(nums): unique = set(nums) if len(unique) < 2: raise ValueError(\"列表中至少需要两个不同的数\") unique.remove(max(unique)"
-    },
-    {
-      "name": "tiangong",
-      "label": "天工 AI",
-      "url": "https://www.tiangong.cn/",
-      "at": "2026-10-28T06:51:20.366Z",
-      "input": "div[contenteditable=\"true\"]#0",
-      "ansLen": 2666,
-      "how": "main(inner)",
-      "result": "no_answer",
-      "evidence": "投递后未产出可判分正文（答案区净长度 2666 字，未出现函数定义；页面尾部：使用过 召唤专家 版权所有 © 昆仑万维科技股份有限公司 京公网安备11010102006563号 京ICP备09007496号-17 京ICP证080262号）"
-    },
-    {
-      "name": "manus",
-      "label": "Manus",
-      "url": "https://manus.im/",
-      "at": "2026-10-28T06:52:36.293Z",
-      "input": "div[contenteditable=\"true\"]#0",
-      "ansLen": 141,
-      "how": "body(inner)",
-      "result": "wall",
-      "evidence": "投递后出现登录入口：登录后 / 创建账号以查看"
-    },
-    {
-      "name": "flowith",
-      "label": "Flowith",
-      "url": "https://flowith.io/",
-      "at": "2026-10-28T06:53:36.155Z",
-      "input": "div[contenteditable=\"true\"]#0",
-      "ansLen": 2105,
-      "how": "main(inner)",
-      "result": "wall",
-      "evidence": "投递后出现登录入口：登录以继续 / 欢迎回来"
-    },
-    {
-      "name": "agpt",
-      "label": "AutoGPT",
-      "url": "https://agpt.co/",
-      "at": "2026-10-28T06:54:10.302Z",
-      "input": "textarea#0",
-      "ansLen": 577,
-      "how": "article(inner)",
-      "result": "no_answer",
-      "evidence": "投递后未产出可判分正文（答案区净长度 577 字，未出现函数定义；页面尾部：eed a conversation. If there aren’t any, give the time back. Prepared by Maria ✳）"
-    },
-    {
-      "name": "deepseek",
-      "label": "DeepSeek",
-      "url": "https://chat.deepseek.com/",
-      "at": "2026-10-28T07:08:02.363Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "需要登录才能进入对话（页面出现：手机号 / 验证码）"
-    },
-    {
-      "name": "grok",
-      "label": "Grok",
-      "url": "https://grok.com/",
-      "at": "2026-10-28T07:08:34.613Z",
-      "input": null,
-      "result": "blocked",
-      "evidence": "安全验证"
-    },
-    {
-      "name": "doubao",
-      "label": "豆包",
-      "url": "https://www.doubao.com/chat/",
-      "at": "2026-10-28T07:08:46.734Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：豆包 新工作任务 Ctrl J 新对话 Ctrl Shift K 项目 API 服务 更多 最近 关于豆包 下载电脑版 登录 有什么我能帮你的吗？ 对话 工作 为你推荐 热点：国产）"
-    },
-    {
-      "name": "yuanbao",
-      "label": "腾讯元宝",
-      "url": "https://yuanbao.tencent.com/",
-      "at": "2026-10-28T07:08:59.449Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：元宝 新建对话 AI 创作 分组 创建分组 前往下载中心 未登录 Hi~ 我是元宝 你身边的智能助手，可以为你答疑解惑、尽情创作，快来点击以下任一功能体验吧～ 你可以这样问 快速回）"
-    },
-    {
-      "name": "nanoai",
-      "label": "纳米 AI",
-      "url": "https://www.n.cn/",
-      "at": "2026-10-28T07:09:11.461Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：首页 订阅方案 帮助文档 企业版 安全可靠的 AI 办公 PPT、文档、视频、代码，重要工作一次做好 Windows客户端 64 位 Mac客户端 Intel/Apple芯片 信创）"
-    },
-    {
-      "name": "mistral",
-      "label": "Mistral Le Chat",
-      "url": "https://chat.mistral.ai/chat",
-      "at": "2026-10-28T07:09:28.149Z",
-      "input": null,
-      "result": "blocked",
-      "evidence": "安全验证"
-    },
-    {
-      "name": "blackbox",
-      "label": "Blackbox AI",
-      "url": "https://www.blackbox.ai/",
-      "at": "2026-10-28T07:09:36.450Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：LOGIN CONTACT SALES SECURE INFERENCE FOR ENTERPRISE END-TO-END ENCRYPTED INFERENCE FOR EVE）"
-    },
-    {
-      "name": "monica",
-      "label": "Monica",
-      "url": "https://www.monica.im/",
-      "at": "2026-10-28T07:09:44.271Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：中文（简体） 产品 学习中心 桌面应用 价格 开发者 资源 登录 添加到 Edge 播放视频介绍 一站式 AI 助手 个性化，便捷，免费 使用 Monica 搭配 GPT-6.1 ）"
-    },
-    {
-      "name": "genspark",
-      "label": "Genspark",
-      "url": "https://www.genspark.ai/",
-      "at": "2026-10-28T07:09:52.433Z",
-      "input": null,
-      "result": "blocked",
-      "evidence": "安全验证"
-    },
-    {
-      "name": "minimax",
-      "label": "MiniMax Agent",
-      "url": "https://agent.minimax.io/",
-      "at": "2026-10-28T07:10:00.014Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：New task Plugins · Skills Connect mobile More MaxHermes MaxClaw Download desktop See plan ）"
-    },
-    {
-      "name": "skywork",
-      "label": "Skywork",
-      "url": "https://skywork.ai/",
-      "at": "2026-10-28T07:10:12.326Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "需要登录才能进入对话（页面出现：登录获取）"
-    },
-    {
-      "name": "coze",
-      "label": "Coze",
-      "url": "https://www.coze.com/",
-      "at": "2026-10-28T07:10:26.106Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：简体中文 Get started Coze: Connect AI to Your Apps Latest AI app development platform Build yo）"
-    },
-    {
-      "name": "dify",
-      "label": "Dify",
-      "url": "https://www.dify.ai/",
-      "at": "2026-10-28T07:10:34.169Z",
-      "input": null,
-      "result": "no_input",
-      "evidence": "页面未找到可投递任务的输入框（首屏：We value your privacy We use cookies to enhance your browsing experience, serve personalis）"
-    },
-    {
-      "name": "poe",
-      "label": "Poe",
-      "url": "https://poe.com/",
-      "at": "2026-10-28T07:10:42.163Z",
-      "input": null,
-      "result": "blocked",
-      "evidence": "安全验证"
-    },
-    {
-      "name": "huggingchat",
-      "label": "HuggingChat",
-      "url": "https://huggingface.co/chat/",
-      "at": "2026-10-28T07:11:24.693Z",
-      "input": null,
-      "result": "blocked",
-      "evidence": "403 ERROR"
-    },
-    {
-      "name": "chatgpt",
-      "label": "ChatGPT",
-      "url": "https://chatgpt.com/",
-      "at": "2026-10-28T07:12:54.180Z",
-      "result": "unreachable",
-      "evidence": "从我们所在网络环境无法建立连接（net::ERR_CONNECTION_CLOSED at https://chatgpt.com/）"
-    },
-    {
-      "name": "claude",
-      "label": "Claude",
-      "url": "https://claude.ai/",
-      "at": "2026-10-28T07:13:05.662Z",
-      "input": null,
-      "result": "blocked",
-      "evidence": "安全验证"
-    },
-    {
-      "name": "gemini",
-      "label": "Gemini",
-      "url": "https://gemini.google.com/app",
-      "at": "2026-10-28T07:13:13.772Z",
-      "result": "unreachable",
-      "evidence": "从我们所在网络环境无法建立连接（net::ERR_CONNECTION_CLOSED at https://gemini.google.com/app）"
-    }
-  ]
+ "generatedAt": "2026-10-28T07:13:20.502Z",
+ "probe": "写一个 Python 函数，输入整数列表，返回其中第二大的数。只给代码不要解释。",
+ "items": [
+  {
+   "name": "perplexity",
+   "label": "Perplexity",
+   "url": "https://www.perplexity.ai/",
+   "at": "2026-10-28T06:47:17.327Z",
+   "input": "div[contenteditable=\"true\"]#0",
+   "ansLen": 241,
+   "how": ".prose(inner)",
+   "result": "answer",
+   "evidence": "答案区出现函数定义（.prose(inner)，净长度 241 字）",
+   "snippet": "def second_largest(nums: list[int]) -> int: largest = second = None for num in nums: if largest is None or num > largest: second, largest = largest, num el"
+  },
+  {
+   "name": "metaso",
+   "label": "秘塔 AI 搜索",
+   "url": "https://metaso.cn/",
+   "at": "2026-10-28T06:47:57.380Z",
+   "input": "textarea#0",
+   "ansLen": 155,
+   "how": "body(clean)",
+   "result": "wall",
+   "evidence": "投递后出现登录入口：登录后"
+  },
+  {
+   "name": "qwen",
+   "label": "通义千问",
+   "url": "https://chat.qwen.ai/",
+   "at": "2026-10-28T06:49:17.124Z",
+   "input": "textarea#0",
+   "ansLen": 2,
+   "how": "main(clean)",
+   "result": "no_answer",
+   "evidence": "投递后未产出可判分正文（答案区净长度 2 字，未出现函数定义；页面尾部：有什么可以帮你的吗？写一个 Python 函数，输入整数列表，返回其中第二大的数。只给代码不要解释。自动）"
+  },
+  {
+   "name": "kimi",
+   "label": "Kimi",
+   "url": "https://www.kimi.com/",
+   "at": "2026-10-28T06:49:53.130Z",
+   "input": "div[contenteditable=\"true\"]#0",
+   "ansLen": 199,
+   "how": "body(clean)",
+   "result": "wall",
+   "evidence": "投递后出现登录入口：手机号 / 验证码"
+  },
+  {
+   "name": "chatglm",
+   "label": "智谱清言",
+   "url": "https://chatglm.cn/",
+   "at": "2026-10-28T06:50:26.564Z",
+   "input": "textarea#0",
+   "ansLen": 1723,
+   "how": "[class*=\"answer\" i](clean)",
+   "result": "wall",
+   "evidence": "首次探测可跑通（答案区出现函数定义，净长度 1723 字）；但补全 15 次（5 题 × 3 次）时 11 次撞微信扫码登录墙，仅 T2/T3/T4/T5 各拿到 1 次正文，不足中位数口径 → 判定为测不了",
+   "snippet": "def second_largest(nums): unique = set(nums) if len(unique) < 2: raise ValueError(\"列表中至少需要两个不同的数\") unique.remove(max(unique)",
+   "recheck": {
+    "at": "2026-10-28T11:14:00Z",
+    "what": "补全 RT-5 全量：5 题 × 3 次 = 15 次真实投递",
+    "attempts": 15,
+    "ok": 4,
+    "wall": 11,
+    "ok_detail": "T2/T3/T4/T5 各成功 1 次（均只有 1 次运行，不足「每题 3 次取中位数」的口径）",
+    "wall_detail": "其余 11 次投递后弹出微信扫码登录墙，无法继续",
+    "result": "wall",
+    "conclusion": "首次探测通过只说明「能跑第 1 题」，不等于「能跑完 5 题 × 3 次」。RT-5 要求每题 3 次取中位数，智谱清言没有任何一题跑够 3 次，因此不进榜、不给分。"
+   },
+   "first_result": "answer",
+   "first_evidence": "答案区出现函数定义（[class*=\"answer\" i](clean)，净长度 1723 字）"
+  },
+  {
+   "name": "tiangong",
+   "label": "天工 AI",
+   "url": "https://www.tiangong.cn/",
+   "at": "2026-10-28T06:51:20.366Z",
+   "input": "div[contenteditable=\"true\"]#0",
+   "ansLen": 2666,
+   "how": "main(inner)",
+   "result": "no_answer",
+   "evidence": "投递后未产出可判分正文（答案区净长度 2666 字，未出现函数定义；页面尾部：使用过 召唤专家 版权所有 © 昆仑万维科技股份有限公司 京公网安备11010102006563号 京ICP备09007496号-17 京ICP证080262号）"
+  },
+  {
+   "name": "manus",
+   "label": "Manus",
+   "url": "https://manus.im/",
+   "at": "2026-10-28T06:52:36.293Z",
+   "input": "div[contenteditable=\"true\"]#0",
+   "ansLen": 141,
+   "how": "body(inner)",
+   "result": "wall",
+   "evidence": "投递后出现登录入口：登录后 / 创建账号以查看"
+  },
+  {
+   "name": "flowith",
+   "label": "Flowith",
+   "url": "https://flowith.io/",
+   "at": "2026-10-28T06:53:36.155Z",
+   "input": "div[contenteditable=\"true\"]#0",
+   "ansLen": 2105,
+   "how": "main(inner)",
+   "result": "wall",
+   "evidence": "投递后出现登录入口：登录以继续 / 欢迎回来"
+  },
+  {
+   "name": "agpt",
+   "label": "AutoGPT",
+   "url": "https://agpt.co/",
+   "at": "2026-10-28T06:54:10.302Z",
+   "input": "textarea#0",
+   "ansLen": 577,
+   "how": "article(inner)",
+   "result": "no_answer",
+   "evidence": "投递后未产出可判分正文（答案区净长度 577 字，未出现函数定义；页面尾部：eed a conversation. If there aren’t any, give the time back. Prepared by Maria ✳）"
+  },
+  {
+   "name": "deepseek",
+   "label": "DeepSeek",
+   "url": "https://chat.deepseek.com/",
+   "at": "2026-10-28T07:08:02.363Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "需要登录才能进入对话（页面出现：手机号 / 验证码）"
+  },
+  {
+   "name": "grok",
+   "label": "Grok",
+   "url": "https://grok.com/",
+   "at": "2026-10-28T07:08:34.613Z",
+   "input": null,
+   "result": "blocked",
+   "evidence": "安全验证"
+  },
+  {
+   "name": "doubao",
+   "label": "豆包",
+   "url": "https://www.doubao.com/chat/",
+   "at": "2026-10-28T07:08:46.734Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：豆包 新工作任务 Ctrl J 新对话 Ctrl Shift K 项目 API 服务 更多 最近 关于豆包 下载电脑版 登录 有什么我能帮你的吗？ 对话 工作 为你推荐 热点：国产）"
+  },
+  {
+   "name": "yuanbao",
+   "label": "腾讯元宝",
+   "url": "https://yuanbao.tencent.com/",
+   "at": "2026-10-28T07:08:59.449Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：元宝 新建对话 AI 创作 分组 创建分组 前往下载中心 未登录 Hi~ 我是元宝 你身边的智能助手，可以为你答疑解惑、尽情创作，快来点击以下任一功能体验吧～ 你可以这样问 快速回）"
+  },
+  {
+   "name": "nanoai",
+   "label": "纳米 AI",
+   "url": "https://www.n.cn/",
+   "at": "2026-10-28T07:09:11.461Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：首页 订阅方案 帮助文档 企业版 安全可靠的 AI 办公 PPT、文档、视频、代码，重要工作一次做好 Windows客户端 64 位 Mac客户端 Intel/Apple芯片 信创）"
+  },
+  {
+   "name": "mistral",
+   "label": "Mistral Le Chat",
+   "url": "https://chat.mistral.ai/chat",
+   "at": "2026-10-28T07:09:28.149Z",
+   "input": null,
+   "result": "blocked",
+   "evidence": "安全验证"
+  },
+  {
+   "name": "blackbox",
+   "label": "Blackbox AI",
+   "url": "https://www.blackbox.ai/",
+   "at": "2026-10-28T07:09:36.450Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：LOGIN CONTACT SALES SECURE INFERENCE FOR ENTERPRISE END-TO-END ENCRYPTED INFERENCE FOR EVE）"
+  },
+  {
+   "name": "monica",
+   "label": "Monica",
+   "url": "https://www.monica.im/",
+   "at": "2026-10-28T07:09:44.271Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：中文（简体） 产品 学习中心 桌面应用 价格 开发者 资源 登录 添加到 Edge 播放视频介绍 一站式 AI 助手 个性化，便捷，免费 使用 Monica 搭配 GPT-6.1 ）"
+  },
+  {
+   "name": "genspark",
+   "label": "Genspark",
+   "url": "https://www.genspark.ai/",
+   "at": "2026-10-28T07:09:52.433Z",
+   "input": null,
+   "result": "blocked",
+   "evidence": "安全验证"
+  },
+  {
+   "name": "minimax",
+   "label": "MiniMax Agent",
+   "url": "https://agent.minimax.io/",
+   "at": "2026-10-28T07:10:00.014Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：New task Plugins · Skills Connect mobile More MaxHermes MaxClaw Download desktop See plan ）"
+  },
+  {
+   "name": "skywork",
+   "label": "Skywork",
+   "url": "https://skywork.ai/",
+   "at": "2026-10-28T07:10:12.326Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "需要登录才能进入对话（页面出现：登录获取）"
+  },
+  {
+   "name": "coze",
+   "label": "Coze",
+   "url": "https://www.coze.com/",
+   "at": "2026-10-28T07:10:26.106Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：简体中文 Get started Coze: Connect AI to Your Apps Latest AI app development platform Build yo）"
+  },
+  {
+   "name": "dify",
+   "label": "Dify",
+   "url": "https://www.dify.ai/",
+   "at": "2026-10-28T07:10:34.169Z",
+   "input": null,
+   "result": "no_input",
+   "evidence": "页面未找到可投递任务的输入框（首屏：We value your privacy We use cookies to enhance your browsing experience, serve personalis）"
+  },
+  {
+   "name": "poe",
+   "label": "Poe",
+   "url": "https://poe.com/",
+   "at": "2026-10-28T07:10:42.163Z",
+   "input": null,
+   "result": "blocked",
+   "evidence": "安全验证"
+  },
+  {
+   "name": "huggingchat",
+   "label": "HuggingChat",
+   "url": "https://huggingface.co/chat/",
+   "at": "2026-10-28T07:11:24.693Z",
+   "input": null,
+   "result": "blocked",
+   "evidence": "403 ERROR"
+  },
+  {
+   "name": "chatgpt",
+   "label": "ChatGPT",
+   "url": "https://chatgpt.com/",
+   "at": "2026-10-28T07:12:54.180Z",
+   "result": "unreachable",
+   "evidence": "从我们所在网络环境无法建立连接（net::ERR_CONNECTION_CLOSED at https://chatgpt.com/）"
+  },
+  {
+   "name": "claude",
+   "label": "Claude",
+   "url": "https://claude.ai/",
+   "at": "2026-10-28T07:13:05.662Z",
+   "input": null,
+   "result": "blocked",
+   "evidence": "安全验证"
+  },
+  {
+   "name": "gemini",
+   "label": "Gemini",
+   "url": "https://gemini.google.com/app",
+   "at": "2026-10-28T07:13:13.772Z",
+   "result": "unreachable",
+   "evidence": "从我们所在网络环境无法建立连接（net::ERR_CONNECTION_CLOSED at https://gemini.google.com/app）"
+  }
+ ],
+ "recheckNote": "覆盖度探测的判定口径已收紧：首次投递能出答案 ≠ 能跑完 RT-5。凡是被判定为「匿名可跑通」的产品，只有在真正跑满 5 题 × 3 次之后才会进榜。2026-10-28 对智谱清言做首次复核，结果由 answer 改判为 wall。"
 }

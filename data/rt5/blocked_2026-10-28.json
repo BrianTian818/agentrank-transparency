@@ -1,0 +1,40 @@
+{
+  "generated": "2026-10-28",
+  "note": "跑了几题但没跑完 RT-5 的产品。它们不在榜上不是因为分低，是因为中位数口径不成立 —— 我们照样把拿到的原文公开。",
+  "rule": "RT-5 要求每题真跑 3 次取中位数。任何一题没跑够 3 次，该题的中位数就不存在，整个产品不给总分、不进榜。宁可公示「没测完」，也不拿 1 次运行当成绩。",
+  "items": [
+    {
+      "product": "chatglm",
+      "label": "智谱清言",
+      "url": "https://chatglm.cn/",
+      "attempts": 15,
+      "ok": 4,
+      "ok_detail": "T2 / T3 / T4 / T5 各拿到 1 次正文",
+      "blocked": 11,
+      "missing": "T1 一次都没跑出来",
+      "reason": "微信扫码登录墙",
+      "reason_detail": "同一匿名会话投递数题后开始强制要求微信扫码登录，无法继续。首次探测（只投 1 题）时是可跑通的，说明限制发生在累计用量之后，不是首屏拦截。",
+      "why_not_scored": "五题里没有任何一题跑够 3 次，中位数口径不成立。只有 1 次运行的题目，那一次的好坏完全代表不了产品水平 —— 拿它当成绩就是撒谎。",
+      "computed_scores": {
+        "T2": 100.0,
+        "T3": 0.0,
+        "T4": 0.0,
+        "T5": 0.0,
+        "grader": "rt5-judge-0.2",
+        "collector": "rt5-collect-0.3"
+      },
+      "scores_unreliable": true,
+      "why_scores_unreliable": "我们抓到的 4 份正文里混进了智谱清言的思考过程（开头是「ChatGLM语音梦幻杰思考结束…我需要搜索最新数据…10 个来源…」）。答案区选择器命中了包含思考过程的外层容器，把推理链当成正文一起抓了下来。T3 判 0（no_header）、T4 判 0（no_h2）、T5 判 0（json_error）都是这个原因造成的，不是智谱清言写不出表格、PPT 或 JSON。",
+      "collector_defect": "rt5-collect-0.3 未处理「思考过程 / 推理链容器」。已定位，待修复并升版本 rt5-collect-0.4 后重测。在产品被登录墙挡住、无法重跑验证之前，我们不会把修复后的分数发出去 —— 没验证过就等于没修。",
+      "first_seen": "2026-10-28T11:06:00Z",
+      "evidence_ok": [
+        "2026-10-28-chatglm-2-r1",
+        "2026-10-28-chatglm-3-r1",
+        "2026-10-28-chatglm-4-r1",
+        "2026-10-28-chatglm-5-r1"
+      ],
+      "evidence_wall": "2026-10-28-chatglm-wall-1-r2",
+      "evidence_base": "https://agentrank.xyz/rt5/evidence/"
+    }
+  ]
+}
