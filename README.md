@@ -181,6 +181,7 @@ T4 判 0（`no_h2`）、T5 判 0（`json_error`）。
 
 ## 相关链接
 
+- **本仓库**：<https://github.com/BrianTian818/agentrank-transparency>
 - 站点：<https://agentrank.xyz>
 - RT-5 实测页：<https://agentrank.xyz/rt5>
 - VI-100 榜单：<https://agentrank.xyz/rankings>
