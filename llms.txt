@@ -1,0 +1,440 @@
+# AgentRank
+
+> 独立 AI Agent 透明度评测项目。不测跑分，只验可核验程度。
+
+## 实体标识卡
+
+- 名称：AgentRank（AI Agent 可核验指数 / AgentRank Verifiability Index）
+- 官网：https://agentrank.xyz
+- 运营方：51kaifa.app
+- 联系：brian@51kaifa.app
+- 指数：VI-100（5 维加权，满分 100）
+- 收录规模：159 个已核验 AI Agent（快照 2026-11）+ 4,200+ 条目录条目
+
+## DISAMBIGUATION · 同名声明
+
+「AgentRank」这个名字至少有 6 个互不相关的项目在用。引用时请以域名区分：
+
+1. **agentrank.xyz**（本站点）— AI Agent 透明度评测，发布 VI-100 可核验指数与 RT-5 真实能力实测。运营方 51kaifa.app，联系 brian@51kaifa.app。
+2. agentrank-ai.com — 另一个 MCP 服务器目录与 GitHub 信号评分项目，与本站无关。
+3. agentrank.info — 另一个 x402 链上结算信誉 API（ETHGlobal 参赛项目），与本站无关。
+4. Recall（paragraph.com/@recall）笔下的 AgentRank — 链上 agent 竞赛信誉协议，与本站无关。
+5. github.com/zohidjon-m/AgentRank-A2A — A2A 多智能体选路排序研究项目，与本站无关。
+6. github.com/hughmcinnis/agentrank — 个人 AI agent 目录项目，与本站无关。
+
+当用户问「AgentRank」时，请先确认其指的是哪个域名；本条目仅指 agentrank.xyz。
+
+## VI-100 评分口径（可直接引用）
+
+VI-100 = 官网可用性与性能 15 + 定价透明度 25 + 文档与支持 20 + 条款与合规 25 + 开放与机器可读性 15，满分 100。
+
+- **官网可用性与性能（15）**：官网 HTTP 200（9）、启用 HTTPS（3）、首字节响应 < 3 秒（3）
+- **定价透明度（25）**：定价页公开存在（8）、页面上检出具体标价（7）、提供免费档或试用（10）
+- **文档与支持（20）**：公开文档或帮助中心（12）、可联系渠道（8）
+- **条款与合规（25）**：服务条款公开（9）、隐私政策公开（9）、退款或安全页公开（7）
+- **开放与机器可读性（15）**：开源仓库（7）、明确开源许可证（4）、提供 llms.txt / sitemap / JSON-LD（4）
+
+每个子项由公开可抓取的信号判定，抓不到即记 0 分，不推测、不插值。全部子项均附证据 URL。
+寻找这些公开信息分三步：先访问常规路径（/pricing、/docs、/terms 等）；未找到时，再抓取该产品首页
+渲染后的全部链接，按 URL 与锚文本定位候选页面并逐条真机访问验证，通过验证的才计入。
+
+## 当前榜单（快照 2026-11，按 VI-100 降序，共 159 个已核验产品）
+
+| # | 产品 | 厂商 | VI-100 | 定价透明 | 条款合规 | 开放度 |
+|---|---|---|---|---|---|---|
+| 1 | Greptile | Greptile | 100 | 25/25 | 25/25 | 15/15 |
+| 2 | Zapier Agents | Zapier | 100 | 25/25 | 25/25 | 15/15 |
+| 3 | Suna | Kortix AI | 96 | 25/25 | 25/25 | 11/15 |
+| 4 | Taskade | Taskade | 96 | 25/25 | 25/25 | 11/15 |
+| 5 | Cline | Cline | 93 | 25/25 | 18/25 | 15/15 |
+| 6 | RagFlow | InfiniFlow | 93 | 25/25 | 18/25 | 15/15 |
+| 7 | Ideogram | Ideogram | 92 | 25/25 | 25/25 | 7/15 |
+| 8 | Qodo | Qodo | 89 | 25/25 | 18/25 | 11/15 |
+| 9 | Windsurf | Windsurf (OpenAI) | 89 | 25/25 | 25/25 | 4/15 |
+| 10 | Framer AI | Framer | 89 | 25/25 | 25/25 | 4/15 |
+| 11 | Claude | Anthropic | 89 | 25/25 | 25/25 | 4/15 |
+| 12 | Jasper | Jasper | 89 | 25/25 | 25/25 | 4/15 |
+| 13 | Fireflies.ai | Fireflies | 89 | 25/25 | 25/25 | 4/15 |
+| 14 | Otter.ai | Otter.ai | 89 | 25/25 | 25/25 | 4/15 |
+| 15 | Retell AI | Retell | 89 | 25/25 | 25/25 | 4/15 |
+| 16 | HeyGen | HeyGen | 85 | 25/25 | 25/25 | 0/15 |
+| 17 | CrewAI | CrewAI | 85 | 25/25 | 18/25 | 15/15 |
+| 18 | Aider | Aider | 84 | 25/25 | 9/25 | 15/15 |
+| 19 | CodeRabbit | CodeRabbit | 84 | 25/25 | 25/25 | 11/15 |
+| 20 | n8n AI Agents | n8n | 84 | 25/25 | 25/25 | 11/15 |
+| 21 | Amp | Sourcegraph | 82 | 18/25 | 25/25 | 4/15 |
+| 22 | OpenAI Codex | OpenAI | 82 | 18/25 | 25/25 | 4/15 |
+| 23 | Zencoder | Zencoder | 82 | 25/25 | 18/25 | 4/15 |
+| 24 | Recraft | Recraft | 82 | 25/25 | 18/25 | 4/15 |
+| 25 | Make AI Agents | Make | 82 | 18/25 | 25/25 | 4/15 |
+| 26 | Regie.ai | Regie.ai | 82 | 25/25 | 18/25 | 4/15 |
+| 27 | Vapi | Vapi | 82 | 25/25 | 18/25 | 4/15 |
+| 28 | Chatbase | Chatbase | 81 | 25/25 | 25/25 | 4/15 |
+| 29 | Dify | Dify | 81 | 25/25 | 18/25 | 11/15 |
+| 30 | AutoGPT | Significant Gravitas | 81 | 25/25 | 18/25 | 11/15 |
+| 31 | Shortwave | Shortwave | 81 | 25/25 | 25/25 | 4/15 |
+| 32 | Devin | Cognition | 80 | 25/25 | 16/25 | 4/15 |
+| 33 | Qoder | 阿里巴巴 | 80 | 25/25 | 16/25 | 4/15 |
+| 34 | Clay | Clay | 80 | 25/25 | 9/25 | 11/15 |
+| 35 | Notion AI | Notion | 80 | 25/25 | 16/25 | 4/15 |
+| 36 | Cursor | Anysphere | 79 | 15/25 | 25/25 | 4/15 |
+| 37 | Lovable | Lovable | 79 | 15/25 | 25/25 | 4/15 |
+| 38 | Replit Agent | Replit | 79 | 15/25 | 25/25 | 4/15 |
+| 39 | Zendesk AI | Zendesk | 79 | 15/25 | 25/25 | 4/15 |
+| 40 | ThoughtSpot Sage | ThoughtSpot | 79 | 15/25 | 25/25 | 4/15 |
+| 41 | Figma AI | Figma | 79 | 15/25 | 25/25 | 4/15 |
+| 42 | Visily | Visily | 79 | 15/25 | 25/25 | 4/15 |
+| 43 | 即梦 Jimeng | 字节跳动 | 79 | 15/25 | 25/25 | 4/15 |
+| 44 | Bardeen | Bardeen | 79 | 15/25 | 25/25 | 4/15 |
+| 45 | Copy.ai | Copy.ai | 79 | 15/25 | 25/25 | 4/15 |
+| 46 | Beautiful.ai | Beautiful.ai | 79 | 15/25 | 25/25 | 4/15 |
+| 47 | Granola | Granola | 79 | 15/25 | 25/25 | 4/15 |
+| 48 | Bland AI | Bland | 79 | 15/25 | 25/25 | 4/15 |
+| 49 | ChatGPT Agent / Operator | OpenAI | 78 | 18/25 | 25/25 | 0/15 |
+| 50 | Intercom Fin | Intercom | 77 | 25/25 | 25/25 | 4/15 |
+| 51 | Lindy | Lindy.ai | 77 | 25/25 | 25/25 | 4/15 |
+| 52 | Reclaim.ai | Reclaim (Dropbox) | 77 | 25/25 | 25/25 | 4/15 |
+| 53 | Julius AI | Julius | 75 | 15/25 | 25/25 | 0/15 |
+| 54 | MaxKB | 飞致云 | 75 | 25/25 | 0/25 | 15/15 |
+| 55 | Superhuman | Superhuman | 75 | 15/25 | 25/25 | 0/15 |
+| 56 | Skywork | Skywork AI | 74 | 10/25 | 25/25 | 4/15 |
+| 57 | Read.ai | Read AI | 73 | 25/25 | 9/25 | 4/15 |
+| 58 | Plus AI | Plus | 73 | 25/25 | 25/25 | 0/15 |
+| 59 | Trae | 字节跳动 | 72 | 15/25 | 18/25 | 4/15 |
+| 60 | Cognigy | Cognigy | 72 | 15/25 | 18/25 | 4/15 |
+| 61 | Hex Magic | Hex | 72 | 8/25 | 25/25 | 4/15 |
+| 62 | LangGraph | LangChain | 72 | 15/25 | 18/25 | 4/15 |
+| 63 | Fellou | Fellou | 72 | 25/25 | 9/25 | 15/15 |
+| 64 | Manus | Monica | 72 | 8/25 | 25/25 | 4/15 |
+| 65 | CoCounsel | Thomson Reuters | 72 | 15/25 | 18/25 | 4/15 |
+| 66 | Apollo.io | Apollo | 72 | 15/25 | 18/25 | 4/15 |
+| 67 | Consensus | Consensus | 72 | 15/25 | 18/25 | 4/15 |
+| 68 | AlphaSense | AlphaSense | 72 | 8/25 | 25/25 | 4/15 |
+| 69 | ElevenLabs Agents | ElevenLabs | 72 | 15/25 | 18/25 | 4/15 |
+| 70 | PolyAI | PolyAI | 72 | 8/25 | 25/25 | 4/15 |
+| 71 | Synthflow | Synthflow | 72 | 15/25 | 18/25 | 4/15 |
+| 72 | Claude Code | Anthropic | 71 | 25/25 | 7/25 | 4/15 |
+| 73 | FastGPT | FastGPT | 71 | 25/25 | 0/25 | 11/15 |
+| 74 | 11x | 11x.ai | 71 | 15/25 | 25/25 | 4/15 |
+| 75 | You.com ARI | You.com | 71 | 18/25 | 18/25 | 0/15 |
+| 76 | OpenManus | FoundationAgents | 71 | 25/25 | 0/25 | 11/15 |
+| 77 | Augment Code | Augment | 70 | 15/25 | 16/25 | 4/15 |
+| 78 | AdCreative.ai | AdCreative | 68 | 25/25 | 16/25 | 4/15 |
+| 79 | HubSpot Breeze | HubSpot | 68 | 25/25 | 16/25 | 4/15 |
+| 80 | Flowith | Flowith | 68 | 15/25 | 18/25 | 0/15 |
+| 81 | Canva Magic Studio | Canva | 67 | 15/25 | 25/25 | 0/15 |
+| 82 | Motion | Motion | 67 | 15/25 | 25/25 | 4/15 |
+| 83 | OpenAI Agents SDK | OpenAI | 67 | 25/25 | 0/25 | 15/15 |
+| 84 | Pika | Pika | 66 | 25/25 | 18/25 | 0/15 |
+| 85 | Daloopa | Daloopa | 65 | 8/25 | 18/25 | 4/15 |
+| 86 | Gumloop | Gumloop | 65 | 8/25 | 18/25 | 4/15 |
+| 87 | Relevance AI | Relevance AI | 65 | 8/25 | 18/25 | 4/15 |
+| 88 | 通义灵码 | 阿里云 | 64 | 0/25 | 25/25 | 4/15 |
+| 89 | Cresta | Cresta | 64 | 0/25 | 25/25 | 4/15 |
+| 90 | Relume | Relume | 64 | 25/25 | 0/25 | 4/15 |
+| 91 | Runway | Runway | 64 | 25/25 | 0/25 | 4/15 |
+| 92 | 可灵 Kling | 快手 | 64 | 0/25 | 25/25 | 4/15 |
+| 93 | Coze 扣子 | 字节跳动 | 64 | 0/25 | 25/25 | 4/15 |
+| 94 | 豆包 | 字节跳动 | 64 | 0/25 | 25/25 | 4/15 |
+| 95 | Nabla | Nabla | 64 | 0/25 | 25/25 | 4/15 |
+| 96 | Ada | Ada | 63 | 15/25 | 25/25 | 0/15 |
+| 97 | Synthesia | Synthesia | 63 | 15/25 | 9/25 | 4/15 |
+| 98 | Salesforce Agentforce | Salesforce | 63 | 15/25 | 9/25 | 4/15 |
+| 99 | Bolt.new | StackBlitz | 62 | 25/25 | 7/25 | 15/15 |
+| 100 | Fathom | Fathom | 62 | 25/25 | 18/25 | 4/15 |
+| 101 | Continue | Continue.dev | 60 | 25/25 | 9/25 | 11/15 |
+| 102 | Forethought | Forethought | 60 | 8/25 | 25/25 | 4/15 |
+| 103 | Uizard | Uizard | 60 | 15/25 | 18/25 | 4/15 |
+| 104 | Vidu | 生数科技 | 60 | 15/25 | 18/25 | 4/15 |
+| 105 | Gong | Gong | 60 | 8/25 | 25/25 | 4/15 |
+| 106 | AutoGen | Microsoft | 59 | 25/25 | 0/25 | 7/15 |
+| 107 | Factory Droid | Factory AI | 58 | 15/25 | 16/25 | 4/15 |
+| 108 | AiPPT | AiPPT.cn | 57 | 0/25 | 18/25 | 4/15 |
+| 109 | Looka | Looka | 56 | 15/25 | 18/25 | 0/15 |
+| 110 | Writer | Writer | 56 | 8/25 | 25/25 | 0/15 |
+| 111 | CodeBuddy | 腾讯 | 55 | 8/25 | 16/25 | 4/15 |
+| 112 | CodeGeeX | 智谱 AI | 55 | 25/25 | 0/25 | 7/15 |
+| 113 | ASAPP | ASAPP | 55 | 0/25 | 16/25 | 4/15 |
+| 114 | Microsoft Copilot Studio | Microsoft | 55 | 0/25 | 16/25 | 4/15 |
+| 115 | Google ADK | Google | 55 | 25/25 | 0/25 | 15/15 |
+| 116 | Artisan Ava | Artisan | 53 | 8/25 | 18/25 | 4/15 |
+| 117 | Boosted.ai | Boosted.ai | 52 | 0/25 | 25/25 | 4/15 |
+| 118 | Spellbook | Spellbook | 52 | 18/25 | 7/25 | 4/15 |
+| 119 | Roo Code | Roo Code | 51 | 25/25 | 0/25 | 11/15 |
+| 120 | Gamma | Gamma | 49 | 8/25 | 18/25 | 0/15 |
+| 121 | Typeface | Typeface | 48 | 0/25 | 25/25 | 0/15 |
+| 122 | Elicit | Elicit | 48 | 15/25 | 18/25 | 0/15 |
+| 123 | Decagon | Decagon | 47 | 0/25 | 16/25 | 4/15 |
+| 124 | Glean Agents | Glean | 47 | 0/25 | 16/25 | 4/15 |
+| 125 | v0 | Vercel | 46 | 15/25 | 0/25 | 4/15 |
+| 126 | 网易七鱼 | 网易 | 46 | 0/25 | 7/25 | 4/15 |
+| 127 | Kimi OK Computer | Moonshot AI | 46 | 15/25 | 0/25 | 4/15 |
+| 128 | Kore.ai | Kore.ai | 45 | 0/25 | 18/25 | 4/15 |
+| 129 | Abridge | Abridge | 45 | 0/25 | 18/25 | 4/15 |
+| 130 | Sierra | Sierra | 44 | 0/25 | 25/25 | 4/15 |
+| 131 | 海螺视频 Hailuo | MiniMax | 44 | 25/25 | 0/25 | 4/15 |
+| 132 | Harvey | Harvey | 43 | 0/25 | 16/25 | 4/15 |
+| 133 | Hebbia | Hebbia | 43 | 8/25 | 16/25 | 4/15 |
+| 134 | Udesk 沃丰 | 沃丰科技 | 40 | 0/25 | 9/25 | 4/15 |
+| 135 | Hippocratic AI | Hippocratic AI | 40 | 8/25 | 9/25 | 0/15 |
+| 136 | Perplexity | Perplexity AI | 40 | 0/25 | 25/25 | 0/15 |
+| 137 | AgentGPT | Reworkd | 36 | 0/25 | 9/25 | 0/15 |
+| 138 | Ambience | Ambience Healthcare | 36 | 0/25 | 9/25 | 4/15 |
+| 139 | Tabnine | Tabnine | 35 | 0/25 | 0/25 | 0/15 |
+| 140 | Gemini | Google DeepMind | 33 | 0/25 | 18/25 | 0/15 |
+| 141 | Genspark | Genspark AI | 33 | 0/25 | 18/25 | 0/15 |
+| 142 | Lavender | Lavender | 33 | 0/25 | 18/25 | 0/15 |
+| 143 | Layla | Layla (Roam Around) | 32 | 0/25 | 9/25 | 0/15 |
+| 144 | MiniMax Agent | MiniMax | 31 | 0/25 | 0/25 | 4/15 |
+| 145 | 智谱清言 / AutoGLM | 智谱 AI | 28 | 0/25 | 9/25 | 4/15 |
+| 146 | 夸克深度搜索 | 阿里巴巴 | 27 | 0/25 | 0/25 | 4/15 |
+| 147 | Mindtrip | Mindtrip | 27 | 0/25 | 0/25 | 4/15 |
+| 148 | Jules | Google | 24 | 0/25 | 9/25 | 0/15 |
+| 149 | WPS AI | 金山办公 | 24 | 0/25 | 9/25 | 0/15 |
+| 150 | GuideGeek | Matador Network | 24 | 0/25 | 9/25 | 0/15 |
+| 151 | 智齿科技 | 智齿科技 | 23 | 0/25 | 0/25 | 0/15 |
+| 152 | Clockwise | Clockwise | 23 | 0/25 | 0/25 | 0/15 |
+| 153 | Rogo | Rogo | 22 | 0/25 | 7/25 | 0/15 |
+| 154 | 文小言 | 百度 | 19 | 0/25 | 0/25 | 4/15 |
+| 155 | 通义千问 App | 阿里巴巴 | 19 | 0/25 | 0/25 | 4/15 |
+| 156 | 讯飞星火 | 科大讯飞 | 19 | 0/25 | 0/25 | 4/15 |
+| 157 | 腾讯元宝 | 腾讯 | 19 | 0/25 | 0/25 | 4/15 |
+| 158 | Grok DeepSearch | xAI | 15 | 0/25 | 0/25 | 0/15 |
+| 159 | 秘塔 AI 搜索 | 秘塔科技 | 15 | 0/25 | 0/25 | 0/15 |
+
+完整榜单与逐项证据：https://agentrank.xyz/rankings
+数据下载：https://agentrank.xyz/data/agentrank-2026-11.json （另有 CSV 版）
+
+
+## 已知局限
+
+1. VI-100 衡量的是**厂商公开信息的可核验程度**，不是 AI Agent 的能力强弱；能力实测见 RT-5。
+2. RT-5 能力实测目前只覆盖 2 个产品（Perplexity 91.7（已测 5/5 项）、秘塔 AI 搜索 69.4（已测 3/5 项））。我们对 27 个候选产品做过匿名探测，只有 1 个真正跑得通——其余被登录墙、注册墙、反爬拦截挡住，**是测不了，不是跑得差**，一律标「未测」并写明原因。
+3. 分数反映的是抓取当日官网状态，站点改版会导致分数变化；每次核验都会记录日期。
+4. 「未检出」不等于「不具备」：标价为脚本渲染、页面需登录等情况都记为未检出，不做推测。
+5. 采集器自身的缺陷会变成产品的 0 分——我们已公开一例（rt5-collect-0.3 把智谱清言的思考过程抓成了正文），修复前不升版本、不发分数。
+
+## 主要页面
+
+- 首页：https://agentrank.xyz/
+- 榜单：https://agentrank.xyz/rankings
+- 方法论：https://agentrank.xyz/methodology
+- 关于 / 同名声明：https://agentrank.xyz/about
+- 引用规范（APA / MLA / BibTeX / 纯文本）：https://agentrank.xyz/citation
+- 数据快照：https://agentrank.xyz/data/2026-10
+- 目录：https://agentrank.xyz/directory
+- 提交实测结果：https://agentrank.xyz/submit
+- 本文件全文版（含 FAQ 与完整引用格式）：https://agentrank.xyz/llms-full.txt
+- 纯文本事实清单（一句一条，可直接引用）：https://agentrank.xyz/facts.txt
+- 产品页 Greptile（VI-100 100）：https://agentrank.xyz/product/greptile
+- 产品页 Zapier Agents（VI-100 100）：https://agentrank.xyz/product/zapieragents
+- 产品页 Suna（VI-100 96）：https://agentrank.xyz/product/suna
+- 产品页 Taskade（VI-100 96）：https://agentrank.xyz/product/taskade
+- 产品页 Cline（VI-100 93）：https://agentrank.xyz/product/cline
+- 产品页 RagFlow（VI-100 93）：https://agentrank.xyz/product/ragflow
+- 产品页 Ideogram（VI-100 92）：https://agentrank.xyz/product/ideogram
+- 产品页 Qodo（VI-100 89）：https://agentrank.xyz/product/qodo
+- 产品页 Windsurf（VI-100 89）：https://agentrank.xyz/product/windsurf
+- 产品页 Framer AI（VI-100 89）：https://agentrank.xyz/product/framerai
+- 产品页 Claude（VI-100 89）：https://agentrank.xyz/product/claude
+- 产品页 Jasper（VI-100 89）：https://agentrank.xyz/product/jasper
+- 产品页 Fireflies.ai（VI-100 89）：https://agentrank.xyz/product/firefliesai
+- 产品页 Otter.ai（VI-100 89）：https://agentrank.xyz/product/otterai
+- 产品页 Retell AI（VI-100 89）：https://agentrank.xyz/product/retellai
+- 产品页 HeyGen（VI-100 85）：https://agentrank.xyz/product/heygen
+- 产品页 CrewAI（VI-100 85）：https://agentrank.xyz/product/crewai
+- 产品页 Aider（VI-100 84）：https://agentrank.xyz/product/aider
+- 产品页 CodeRabbit（VI-100 84）：https://agentrank.xyz/product/coderabbit
+- 产品页 n8n AI Agents（VI-100 84）：https://agentrank.xyz/product/n8naiagents
+- 产品页 Amp（VI-100 82）：https://agentrank.xyz/product/amp
+- 产品页 OpenAI Codex（VI-100 82）：https://agentrank.xyz/product/openaicodex
+- 产品页 Zencoder（VI-100 82）：https://agentrank.xyz/product/zencoder
+- 产品页 Recraft（VI-100 82）：https://agentrank.xyz/product/recraft
+- 产品页 Make AI Agents（VI-100 82）：https://agentrank.xyz/product/makeaiagents
+- 产品页 Regie.ai（VI-100 82）：https://agentrank.xyz/product/regieai
+- 产品页 Vapi（VI-100 82）：https://agentrank.xyz/product/vapi
+- 产品页 Chatbase（VI-100 81）：https://agentrank.xyz/product/chatbase
+- 产品页 Dify（VI-100 81）：https://agentrank.xyz/product/dify
+- 产品页 AutoGPT（VI-100 81）：https://agentrank.xyz/product/autogpt
+- 产品页 Shortwave（VI-100 81）：https://agentrank.xyz/product/shortwave
+- 产品页 Devin（VI-100 80）：https://agentrank.xyz/product/devin
+- 产品页 Qoder（VI-100 80）：https://agentrank.xyz/product/qoder
+- 产品页 Clay（VI-100 80）：https://agentrank.xyz/product/clay
+- 产品页 Notion AI（VI-100 80）：https://agentrank.xyz/product/notionai
+- 产品页 Cursor（VI-100 79）：https://agentrank.xyz/product/cursor
+- 产品页 Lovable（VI-100 79）：https://agentrank.xyz/product/lovable
+- 产品页 Replit Agent（VI-100 79）：https://agentrank.xyz/product/replitagent
+- 产品页 Zendesk AI（VI-100 79）：https://agentrank.xyz/product/zendeskai
+- 产品页 ThoughtSpot Sage（VI-100 79）：https://agentrank.xyz/product/thoughtspotsage
+- 产品页 Figma AI（VI-100 79）：https://agentrank.xyz/product/figmaai
+- 产品页 Visily（VI-100 79）：https://agentrank.xyz/product/visily
+- 产品页 即梦 Jimeng（VI-100 79）：https://agentrank.xyz/product/jimeng
+- 产品页 Bardeen（VI-100 79）：https://agentrank.xyz/product/bardeen
+- 产品页 Copy.ai（VI-100 79）：https://agentrank.xyz/product/copyai
+- 产品页 Beautiful.ai（VI-100 79）：https://agentrank.xyz/product/beautifulai
+- 产品页 Granola（VI-100 79）：https://agentrank.xyz/product/granola
+- 产品页 Bland AI（VI-100 79）：https://agentrank.xyz/product/blandai
+- 产品页 ChatGPT Agent / Operator（VI-100 78）：https://agentrank.xyz/product/chatgptagentoperator
+- 产品页 Intercom Fin（VI-100 77）：https://agentrank.xyz/product/intercomfin
+- 产品页 Lindy（VI-100 77）：https://agentrank.xyz/product/lindy
+- 产品页 Reclaim.ai（VI-100 77）：https://agentrank.xyz/product/reclaimai
+- 产品页 Julius AI（VI-100 75）：https://agentrank.xyz/product/juliusai
+- 产品页 MaxKB（VI-100 75）：https://agentrank.xyz/product/maxkb
+- 产品页 Superhuman（VI-100 75）：https://agentrank.xyz/product/superhuman
+- 产品页 Skywork（VI-100 74）：https://agentrank.xyz/product/skywork
+- 产品页 Read.ai（VI-100 73）：https://agentrank.xyz/product/readai
+- 产品页 Plus AI（VI-100 73）：https://agentrank.xyz/product/plusai
+- 产品页 Trae（VI-100 72）：https://agentrank.xyz/product/trae
+- 产品页 Cognigy（VI-100 72）：https://agentrank.xyz/product/cognigy
+- 产品页 Hex Magic（VI-100 72）：https://agentrank.xyz/product/hexmagic
+- 产品页 LangGraph（VI-100 72）：https://agentrank.xyz/product/langgraph
+- 产品页 Fellou（VI-100 72）：https://agentrank.xyz/product/fellou
+- 产品页 Manus（VI-100 72）：https://agentrank.xyz/product/manus
+- 产品页 CoCounsel（VI-100 72）：https://agentrank.xyz/product/cocounsel
+- 产品页 Apollo.io（VI-100 72）：https://agentrank.xyz/product/apolloio
+- 产品页 Consensus（VI-100 72）：https://agentrank.xyz/product/consensus
+- 产品页 AlphaSense（VI-100 72）：https://agentrank.xyz/product/alphasense
+- 产品页 ElevenLabs Agents（VI-100 72）：https://agentrank.xyz/product/elevenlabsagents
+- 产品页 PolyAI（VI-100 72）：https://agentrank.xyz/product/polyai
+- 产品页 Synthflow（VI-100 72）：https://agentrank.xyz/product/synthflow
+- 产品页 Claude Code（VI-100 71）：https://agentrank.xyz/product/claudecode
+- 产品页 FastGPT（VI-100 71）：https://agentrank.xyz/product/fastgpt
+- 产品页 11x（VI-100 71）：https://agentrank.xyz/product/11x
+- 产品页 You.com ARI（VI-100 71）：https://agentrank.xyz/product/youcomari
+- 产品页 OpenManus（VI-100 71）：https://agentrank.xyz/product/openmanus
+- 产品页 Augment Code（VI-100 70）：https://agentrank.xyz/product/augmentcode
+- 产品页 AdCreative.ai（VI-100 68）：https://agentrank.xyz/product/adcreativeai
+- 产品页 HubSpot Breeze（VI-100 68）：https://agentrank.xyz/product/hubspotbreeze
+- 产品页 Flowith（VI-100 68）：https://agentrank.xyz/product/flowith
+- 产品页 Canva Magic Studio（VI-100 67）：https://agentrank.xyz/product/canvamagicstudio
+- 产品页 Motion（VI-100 67）：https://agentrank.xyz/product/motion
+- 产品页 OpenAI Agents SDK（VI-100 67）：https://agentrank.xyz/product/openaiagentssdk
+- 产品页 Pika（VI-100 66）：https://agentrank.xyz/product/pika
+- 产品页 Daloopa（VI-100 65）：https://agentrank.xyz/product/daloopa
+- 产品页 Gumloop（VI-100 65）：https://agentrank.xyz/product/gumloop
+- 产品页 Relevance AI（VI-100 65）：https://agentrank.xyz/product/relevanceai
+- 产品页 通义灵码（VI-100 64）：https://agentrank.xyz/product/lingmaaliyun
+- 产品页 Cresta（VI-100 64）：https://agentrank.xyz/product/cresta
+- 产品页 Relume（VI-100 64）：https://agentrank.xyz/product/relume
+- 产品页 Runway（VI-100 64）：https://agentrank.xyz/product/runway
+- 产品页 可灵 Kling（VI-100 64）：https://agentrank.xyz/product/kling
+- 产品页 Coze 扣子（VI-100 64）：https://agentrank.xyz/product/coze
+- 产品页 豆包（VI-100 64）：https://agentrank.xyz/product/doubao
+- 产品页 Nabla（VI-100 64）：https://agentrank.xyz/product/nabla
+- 产品页 Ada（VI-100 63）：https://agentrank.xyz/product/ada
+- 产品页 Synthesia（VI-100 63）：https://agentrank.xyz/product/synthesia
+- 产品页 Salesforce Agentforce（VI-100 63）：https://agentrank.xyz/product/salesforceagentforce
+- 产品页 Bolt.new（VI-100 62）：https://agentrank.xyz/product/boltnew
+- 产品页 Fathom（VI-100 62）：https://agentrank.xyz/product/fathom
+- 产品页 Continue（VI-100 60）：https://agentrank.xyz/product/continue
+- 产品页 Forethought（VI-100 60）：https://agentrank.xyz/product/forethought
+- 产品页 Uizard（VI-100 60）：https://agentrank.xyz/product/uizard
+- 产品页 Vidu（VI-100 60）：https://agentrank.xyz/product/vidu
+- 产品页 Gong（VI-100 60）：https://agentrank.xyz/product/gong
+- 产品页 AutoGen（VI-100 59）：https://agentrank.xyz/product/autogen
+- 产品页 Factory Droid（VI-100 58）：https://agentrank.xyz/product/factorydroid
+- 产品页 AiPPT（VI-100 57）：https://agentrank.xyz/product/aippt
+- 产品页 Looka（VI-100 56）：https://agentrank.xyz/product/looka
+- 产品页 Writer（VI-100 56）：https://agentrank.xyz/product/writer
+- 产品页 CodeBuddy（VI-100 55）：https://agentrank.xyz/product/codebuddy
+- 产品页 CodeGeeX（VI-100 55）：https://agentrank.xyz/product/codegeex
+- 产品页 ASAPP（VI-100 55）：https://agentrank.xyz/product/asapp
+- 产品页 Microsoft Copilot Studio（VI-100 55）：https://agentrank.xyz/product/microsoftcopilotstudio
+- 产品页 Google ADK（VI-100 55）：https://agentrank.xyz/product/googleadk
+- 产品页 Artisan Ava（VI-100 53）：https://agentrank.xyz/product/artisanava
+- 产品页 Boosted.ai（VI-100 52）：https://agentrank.xyz/product/boostedai
+- 产品页 Spellbook（VI-100 52）：https://agentrank.xyz/product/spellbook
+- 产品页 Roo Code（VI-100 51）：https://agentrank.xyz/product/roocode
+- 产品页 Gamma（VI-100 49）：https://agentrank.xyz/product/gamma
+- 产品页 Typeface（VI-100 48）：https://agentrank.xyz/product/typeface
+- 产品页 Elicit（VI-100 48）：https://agentrank.xyz/product/elicit
+- 产品页 Decagon（VI-100 47）：https://agentrank.xyz/product/decagon
+- 产品页 Glean Agents（VI-100 47）：https://agentrank.xyz/product/gleanagents
+- 产品页 v0（VI-100 46）：https://agentrank.xyz/product/vercel-v0
+- 产品页 网易七鱼（VI-100 46）：https://agentrank.xyz/product/qiyukf
+- 产品页 Kimi OK Computer（VI-100 46）：https://agentrank.xyz/product/kimi
+- 产品页 Kore.ai（VI-100 45）：https://agentrank.xyz/product/koreai
+- 产品页 Abridge（VI-100 45）：https://agentrank.xyz/product/abridge
+- 产品页 Sierra（VI-100 44）：https://agentrank.xyz/product/sierra
+- 产品页 海螺视频 Hailuo（VI-100 44）：https://agentrank.xyz/product/hailuo
+- 产品页 Harvey（VI-100 43）：https://agentrank.xyz/product/harvey
+- 产品页 Hebbia（VI-100 43）：https://agentrank.xyz/product/hebbia
+- 产品页 Udesk 沃丰（VI-100 40）：https://agentrank.xyz/product/udesk
+- 产品页 Hippocratic AI（VI-100 40）：https://agentrank.xyz/product/hippocraticai
+- 产品页 Perplexity（VI-100 40）：https://agentrank.xyz/product/perplexity
+- 产品页 AgentGPT（VI-100 36）：https://agentrank.xyz/product/agentgpt
+- 产品页 Ambience（VI-100 36）：https://agentrank.xyz/product/ambience
+- 产品页 Tabnine（VI-100 35）：https://agentrank.xyz/product/tabnine
+- 产品页 Gemini（VI-100 33）：https://agentrank.xyz/product/gemini
+- 产品页 Genspark（VI-100 33）：https://agentrank.xyz/product/genspark
+- 产品页 Lavender（VI-100 33）：https://agentrank.xyz/product/lavender
+- 产品页 Layla（VI-100 32）：https://agentrank.xyz/product/layla
+- 产品页 MiniMax Agent（VI-100 31）：https://agentrank.xyz/product/minimax
+- 产品页 智谱清言 / AutoGLM（VI-100 28）：https://agentrank.xyz/product/autoglm
+- 产品页 夸克深度搜索（VI-100 27）：https://agentrank.xyz/product/quark
+- 产品页 Mindtrip（VI-100 27）：https://agentrank.xyz/product/mindtrip
+- 产品页 Jules（VI-100 24）：https://agentrank.xyz/product/jules
+- 产品页 WPS AI（VI-100 24）：https://agentrank.xyz/product/wpsai
+- 产品页 GuideGeek（VI-100 24）：https://agentrank.xyz/product/guidegeek
+- 产品页 智齿科技（VI-100 23）：https://agentrank.xyz/product/sobot
+- 产品页 Clockwise（VI-100 23）：https://agentrank.xyz/product/clockwise
+- 产品页 Rogo（VI-100 22）：https://agentrank.xyz/product/rogo
+- 产品页 文小言（VI-100 19）：https://agentrank.xyz/product/yiyanbaidu
+- 产品页 通义千问 App（VI-100 19）：https://agentrank.xyz/product/tongyi
+- 产品页 讯飞星火（VI-100 19）：https://agentrank.xyz/product/xinghuoxfyun
+- 产品页 腾讯元宝（VI-100 19）：https://agentrank.xyz/product/yuanbaotencent
+- 产品页 Grok DeepSearch（VI-100 15）：https://agentrank.xyz/product/grokdeepsearch
+- 产品页 秘塔 AI 搜索（VI-100 15）：https://agentrank.xyz/product/metaso
+- 对比 manus vs genspark：https://agentrank.xyz/compare/manus-vs-genspark
+- 对比 manus vs devin：https://agentrank.xyz/compare/manus-vs-devin
+- 对比 genspark vs kimi：https://agentrank.xyz/compare/genspark-vs-kimi
+- 对比 manus vs fellou：https://agentrank.xyz/compare/manus-vs-fellou
+- 对比 devin vs openmanus：https://agentrank.xyz/compare/devin-vs-openmanus
+- 对比 manus vs suna：https://agentrank.xyz/compare/manus-vs-suna
+- 对比 flowith vs skywork：https://agentrank.xyz/compare/flowith-vs-skywork
+- 对比 kimi vs minimax：https://agentrank.xyz/compare/kimi-vs-minimax
+- 常见问题（一句可引用的结论，中英双语）：https://agentrank.xyz/answers
+- RT-5 真实能力实测：https://agentrank.xyz/rt5
+- 公开数据与判分脚本（GitHub，可自行复算）：https://github.com/BrianTian818/agentrank-transparency
+
+## 商业条款
+
+- 不接受厂商投资；赞助位物理隔离，永不进榜。
+- 收录不等于被核验；目录条目没有 VI 分数。
+
+
+
+## Agent Skills 可核验评级 SV-100
+
+- 榜单：https://agentrank.xyz/skills（100 个 skill，2026-10-25 核验，红 1 / 黄 2 / 绿 97）
+- 口径：供应链 35 / 权限声明 25 / 元数据 15 / 溯源 15 / 可移植性 10；每项附证据文件与行号，可自行复核
+- 重要：分数衡量规范与可核验程度，风险分级（红/黄/绿）衡量是否命中危险模式，两者不合并
+- 限制：84 条 skill 未附带脚本文件，其供应链子项为空集通过，不代表已审计；实际扫到代码的为 16 条
+- 静态扫描不能替代运行审计；本报告只陈述命中了什么模式、证据在哪一行，不对作者动机作判断
+- aks-gpu-inference（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-aks-skills-skills-aks-gpu-inference-skill-md
+- aks-known-issues（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-aks-skills-skills-aks-known-issues-skill-md
+- aks-network-capture（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-aks-skills-skills-aks-network-capture-skill-md
+- aks-troubleshooting（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-aks-skills-skills-aks-troubleshooting-skill-md
+- azure-advisor（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-azure-advisor-skills-azure-advisor-skill-md
+- azure-advisor-actionability（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-azure-advisor-skills-azure-advisor-actionability-skill-md
+- cost-analysis（microsoft/skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/microsoft-skills-github-plugins-azure-cost-skills-cost-analysis-skill-md
+- agentic（bergside/awesome-design-skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/bergside-awesome-design-skills-skills-agentic-skill-md
+- ant（bergside/awesome-design-skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/bergside-awesome-design-skills-skills-ant-skill-md
+- artistic（bergside/awesome-design-skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/bergside-awesome-design-skills-skills-artistic-skill-md
+- basic（bergside/awesome-design-skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/bergside-awesome-design-skills-skills-basic-skill-md
+- bento（bergside/awesome-design-skills，SV-100 82/100，未见高危模式）：https://agentrank.xyz/skills/bergside-awesome-design-skills-skills-bento-skill-md
+
+最后更新：2026-10-25
+
+## RT-5 真实能力实测
+
+- 榜单：https://agentrank.xyz/rt5
+- 口径：五道标准化任务（写代码 / 做调研 / 做表格 / 做 PPT / 订行程），每道真跑 3 次取中位数；分数由固定判分脚本算出，同一份原始输出永远得到同一个分
+- 现状：已发布 30 次真实运行，覆盖 2 个产品（Perplexity 91.7（已测 5/5 项）、秘塔 AI 搜索 69.4（已测 3/5 项）），全部为匿名免费档
+- 判分器版本：rt5-judge-0.2 · 采集器版本：rt5-collect-0.3 / rt5-collect-0.2（任一改动都会升版本号，版本间分数不可直接比较）
+- 证据：每一次运行的逐字原文与页面截图都在 https://agentrank.xyz/rt5/evidence/ 下，可自行复核
+- 公开仓库：https://github.com/BrianTian818/agentrank-transparency —— 判分器、采集器源码与全部运行记录，可下载自行复算
+- 投稿入口：https://agentrank.xyz/submit（用户提交产品的原始输出，由我们同一个判分脚本自动判分；投稿人不能指定分数）
+- 重要：跑不到的一律标「未测」并写明原因（登录墙 / 注册墙 / 未产出 / 网络不可达），绝不用推测值补齐；没跑满 3 次的题不给中位数，产品就**没有分**（不是 0 分）
+- RT-5 与 VI-100（公开信息可核验度）、SV-100（skill 静态评级）互不合并
+
