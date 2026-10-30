@@ -52,6 +52,7 @@ data/rt5/          每次运行的逐字原文、判分明细、汇总（append-
 data/rt5/blocked_* 跑了几题但没跑完的产品：拿到什么、为什么中断、为什么不打分
 data/coverage/     覆盖度探测：27 个候选产品「不登录能不能跑」
 data/vi100/        VI-100 快照数据
+probe/             VI-100 探测器（三步发现法 + 判定唯一实现）
 evidence/rt5/      每次运行的逐字原文 + 送进判分器的文本 + 页面截图
 ```
 
@@ -189,11 +190,26 @@ T4 判 0（`no_h2`）、T5 判 0（`json_error`）。
 `data/vi100/` 是 2026-11 快照（164 个产品页 / 211 个对比页 / 159 个已核验）。
 探测口径 `vi-100-probe-1.2`（三步发现法：常规路径 → 首页链接发现 → sitemap 反查）。
 
+**探测器本身在 `probe/`**，和 RT-5 一样可以自己复算：
+
+| 文件 | 职责 |
+|---|---|
+| `probe/merge_probe.py` | 判定的**唯一实现** `judge()`，五维打分全在这里 |
+| `probe/_probe_rules.js` | 链接分类规则的**唯一实现**，三步发现共用 |
+| `probe/_probe_all.js` | 第 1 步：常规路径探测 |
+| `probe/_probe_links.js` | 第 2 步：首页链接发现 + 候选真机验证 |
+| `probe/_probe_sitemap.js` | 第 3 步：sitemap 反查 |
+| `probe/_probe_machine.js` | 机器可读性（robots / sitemap / llms.txt / JSON-LD / 仓库） |
+| `probe/verify_probe.py` | 复算校验：用落盘数据重跑判分比对 |
+| `probe/README.md` | 完整口径、复算命令、踩过的坑 |
+
+三步发现法带来的差别：中位分 53 → 65，D 档 99 → 59 个，**没有一个产品分数下降**。
+
 ---
 
 ## 许可
 
-- **代码**（`grader/` `collector/` `pipeline/`）：MIT
+- **代码**（`grader/` `collector/` `pipeline/` `probe/`）：MIT
 - **数据**（`data/` `evidence/`）：CC BY 4.0 —— 随便用，注明来源即可
 
 ---
