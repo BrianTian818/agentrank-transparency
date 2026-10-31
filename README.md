@@ -143,6 +143,25 @@ python grader/realtest_grade.py --task T1 \
 
 ---
 
+## 加入审核委员会（公开招募）
+
+社区提交的 RT-5 实测**不由任何一个人说了算**，而是由公开署名的审核委员会投票定案。
+委员会不设内部名额 —— 谁都可以自荐，我们只看四条：
+
+1. **独立性**：不在任何被测 AI Agent 厂商任职、持股或拿顾问费。
+   在厂商工作的人可以做投稿人，不能做委员。
+2. **看得懂原始输出**：能判断一段输出是不是真跑出来的、有没有被人工改过。
+3. **愿意公开署名**：投的每一票、写的每一条驳回理由都署真名，不设匿名票。
+4. **有冲突就申报，申报了就回避**：哪家产品跟你有关，你就不能审那家。
+
+规则：先拿到 2 张赞成票即上榜，先拿到 2 张反对票即驳回，票数不足继续等票。
+回避由后端按邮箱哈希强制判定，绕不过去。每一张票与每一条驳回理由都在
+https://agentrank.xyz/committee 公开。
+
+申请入口（页面中段「申请成为委员」）：https://agentrank.xyz/committee
+
+---
+
 ## 覆盖度：为什么榜上只有几个产品
 
 RT-5 的入选门槛是「**不登录、不注册也能跑完一道真实任务**」。
@@ -245,3 +264,11 @@ Honesty guardrails we do not break: unreachable data is recorded as 0, never gue
 a product that cannot run is marked **untested with a reason**, never given a speculative
 score; any change to grading logic bumps the version, and scores across versions are
 not comparable.
+
+**Join the review committee (open call).** Community-submitted RT-5 runs are decided by
+a named committee vote, not by any single person: 2 approvals publish, 2 rejections reject,
+and no member may review their own submission (enforced server-side by email hash).
+Every vote and every rejection reason is public at https://agentrank.xyz/committee.
+Requirements: independence from vendors, the ability to verify raw output yourself,
+willingness to be named publicly, and disclosure of conflicts of interest.
+Apply at https://agentrank.xyz/committee.
